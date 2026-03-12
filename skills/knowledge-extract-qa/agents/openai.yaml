@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Extract QA"
+  short_description: "Extract and answer from local knowledge files with citations"
+  default_prompt: "Use the local KNOWLEDGE files to answer user questions by extracting relevant content and citing file paths and locations. Ask clarifying questions when needed. Do not hallucinate."
