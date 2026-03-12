@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-87c63f6eab8d",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/9-断线/9-断线.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "7d60b7c6fba8c48533432d581d96147cdb618a3e7e1f4e0f26c5e299c1a0a86e",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T02:45:44+00:00"
+}

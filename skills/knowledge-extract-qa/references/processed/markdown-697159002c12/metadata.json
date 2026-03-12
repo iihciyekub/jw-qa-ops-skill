@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-697159002c12",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/3-色差/3-色差.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "d994642011f0866a9ac3770dcafcf815b73bd641dac7fa23e839c05450a0cc83",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T02:45:44+00:00"
+}

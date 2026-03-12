@@ -1,4 +1,4 @@
 interface:
   display_name: "Knowledge Extract QA"
-  short_description: "Extract and answer from local knowledge files with citations"
-  default_prompt: "Use the local KNOWLEDGE files to answer user questions by extracting relevant content and citing file paths and locations. Ask clarifying questions when needed. Do not hallucinate."
+  short_description: "Ingest, classify, and answer from the packaged knowledge base with citations"
+  default_prompt: "When new files appear in inbox, process them first with scripts/process_inbox.py so they are classified, copied into the knowledge base, preprocessed into references/processed, and archived from inbox. For questions, start with scripts/retrieve.py over the processed cache, then verify against raw files only when needed, always citing file paths and locations. Do not hallucinate."

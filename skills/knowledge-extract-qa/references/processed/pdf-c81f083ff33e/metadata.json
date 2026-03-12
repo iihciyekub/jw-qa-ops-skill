@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-c81f083ff33e",
+  "source_path": "references/knowledge_base/Quality Standards/品质标准 260227.pdf",
+  "file_type": "pdf",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "25cf6d4de0d67a605e85f487ce8435f8f9996bd4dde2cce1f7df2d124a32f3bf",
+  "extractor": "pdfplumber",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 44,
+  "updated_at": "2026-03-12T02:45:48+00:00"
+}

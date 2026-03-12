@@ -1,0 +1,18 @@
+{
+  "doc_id": "markdown-d1646562d914",
+  "source_path": "references/knowledge_base/Quality Standards/品质标准/品质标准.md",
+  "file_type": "markdown",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards",
+    "品质标准"
+  ],
+  "sha256": "e7465a7ce4d09ef9b63ba57d12049c4f3168943cd52ec8ac09c5066f53d04d91",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 6,
+  "updated_at": "2026-03-12T02:45:45+00:00"
+}

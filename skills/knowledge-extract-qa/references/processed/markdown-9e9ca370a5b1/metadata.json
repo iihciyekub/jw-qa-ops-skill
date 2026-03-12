@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-9e9ca370a5b1",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/10-跳线/10-跳线.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "d1606d6c377900482ed74e19b1b5f8e6336c918c2d81ae8f645c44f9cbdd48ce",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T02:45:44+00:00"
+}

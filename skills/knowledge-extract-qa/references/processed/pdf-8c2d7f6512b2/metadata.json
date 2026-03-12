@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-8c2d7f6512b2",
+  "source_path": "references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.pdf",
+  "file_type": "pdf",
+  "business_category": "finished_inspection_process",
+  "matched_keywords": [
+    "finished product inspection process"
+  ],
+  "sha256": "208f070058ca5b9d38c4c981860d3a39ac61353ec158faf144b6f52a2b60cfdf",
+  "extractor": "pdfplumber",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 17,
+  "updated_at": "2026-03-12T02:45:44+00:00"
+}
