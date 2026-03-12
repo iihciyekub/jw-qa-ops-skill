@@ -1,0 +1,20 @@
+{
+  "doc_id": "markdown-ee6bf08c00d4",
+  "source_path": "references/knowledge_base/data_structure.md",
+  "file_type": "markdown",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards",
+    "品質標準",
+    "品质标准",
+    "抽样"
+  ],
+  "sha256": "19cbe2f4b2f7bfcfbcd19990e2e40ba74895d2f0583b8b00c594b953af388094",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T03:19:58+00:00"
+}

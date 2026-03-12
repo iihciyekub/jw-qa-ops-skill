@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-2b8616f95886",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/8-不对称问题/8-不对称问题.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "40c042e4c6fc0b9d35234451f82ea434ce8d9cfc86441f4b047adff0432246ab",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T03:19:53+00:00"
+}

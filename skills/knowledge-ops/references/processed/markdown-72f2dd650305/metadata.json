@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-72f2dd650305",
+  "source_path": "references/knowledge_base/Product Inspection and Inventory Check Guidelines/data_structure.md",
+  "file_type": "markdown",
+  "business_category": "inspection_guideline",
+  "matched_keywords": [
+    "product inspection and inventory check guidelines"
+  ],
+  "sha256": "bd62dc026161a78058ff11fe080e1ef55ecabef3cb301625ebc0bedad998f649",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 16,
+  "updated_at": "2026-03-12T03:19:54+00:00"
+}

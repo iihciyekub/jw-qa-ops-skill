@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-f8880d58c175",
+  "source_path": "references/knowledge_base/Order inspection plan development/1.2a制定订单查货计划  clean.pdf",
+  "file_type": "pdf",
+  "business_category": "inspection_plan",
+  "matched_keywords": [
+    "order inspection plan development"
+  ],
+  "sha256": "96493c96e93a34d47718da7bd34602b28071f48d56202ce41e049a9ff096d187",
+  "extractor": "pdfplumber",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 5,
+  "updated_at": "2026-03-12T03:19:54+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-8a0590d59036",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/4-尺寸问题/4-尺寸问题.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "90dc54fe204d349b917c0b85168d664951ac7a9c1e722a3ed5ae49a05cd1adb6",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T03:19:53+00:00"
+}

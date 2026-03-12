@@ -1,0 +1,17 @@
+{
+  "doc_id": "ppt-ee953af2344b",
+  "source_path": "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.ppt",
+  "file_type": "ppt",
+  "business_category": "semi_finished_inspection_process",
+  "matched_keywords": [
+    "semi-finished product inspection process"
+  ],
+  "sha256": "f11d005491a093c6b93e23e323eda6b4fc0810849f013d08913b2c44383f2a26",
+  "extractor": "paired-pdf-for-ppt",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": "/Users/yjli/Desktop/ref_260311_jeanswest_skills/skills/knowledge-ops/references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
+  "notes": null,
+  "chunk_count": 7,
+  "updated_at": "2026-03-12T03:19:58+00:00"
+}

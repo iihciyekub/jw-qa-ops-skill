@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-5ae78d63216f",
+  "source_path": "references/knowledge_base/Finished Product Inspection Process/data_structure.md",
+  "file_type": "markdown",
+  "business_category": "finished_inspection_process",
+  "matched_keywords": [
+    "finished product inspection process"
+  ],
+  "sha256": "7692201caf868dfb25ae888018dbc295feb687847125046db07175c7202cc44a",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 7,
+  "updated_at": "2026-03-12T03:19:54+00:00"
+}

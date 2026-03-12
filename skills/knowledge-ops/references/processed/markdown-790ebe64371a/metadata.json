@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-790ebe64371a",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/1-破洞/1-破洞.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "678ff2d7830b1c2179b26998fa46cdf2be5a835c585bf1abad02780da0e5450b",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T03:19:53+00:00"
+}

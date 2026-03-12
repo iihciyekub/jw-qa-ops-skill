@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-72d1bf4ddf8d",
+  "source_path": "references/knowledge_base/Defect Analysis Table/针织圆领/5-领圈褶皱问题/5-领圈褶皱问题.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "11525ce663b9b9eebe46f40944581ad18ac7df42b00a1f15b7a00ba539fd6814",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-03-12T03:19:53+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-497c92d9f34c",
+  "source_path": "references/knowledge_base/Semi-finished Product Inspection Process/data_structure.md",
+  "file_type": "markdown",
+  "business_category": "semi_finished_inspection_process",
+  "matched_keywords": [
+    "semi-finished product inspection process"
+  ],
+  "sha256": "5cb7e252b1a2a43f2dafd5785c4482e5df0ae0d3eca34371a0ca6d9e76b68c13",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 9,
+  "updated_at": "2026-03-12T03:19:58+00:00"
+}

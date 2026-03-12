@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-483278d20044",
+  "source_path": "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
+  "file_type": "pdf",
+  "business_category": "semi_finished_inspection_process",
+  "matched_keywords": [
+    "semi-finished product inspection process"
+  ],
+  "sha256": "d56fb66071849c36795adf59e628f0973ecd3635182331185912afde6ad53194",
+  "extractor": "pdfplumber",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 7,
+  "updated_at": "2026-03-12T03:19:57+00:00"
+}
