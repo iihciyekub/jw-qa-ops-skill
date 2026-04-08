@@ -9,10 +9,14 @@
 
 - `/Finished Product Inspection Proces`
   - 该目录下放置不同版本的成品查货流程的 PPT 文件
+- `/Goods Exemption System`
+  - 该目录放置不同版本的货品免检制度文件
 - `/Product Inspection and Inventory Check Guidelines`
   - 该上当放置不同版本的产品检查及查货工作指引的 pdf 文件
 - `/Quality Standards`
   - 该目录放置品质标准 pdf 文件
+- `/Secondary Quality Control System`
+  - 该目录放置不同版本的二级品管制度文件
 - `/Semi-finished Product Inspection Process
   - 该目录放置不同版本的半成品查貨流程 ppt 文件
 

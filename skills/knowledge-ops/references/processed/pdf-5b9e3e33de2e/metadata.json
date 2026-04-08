@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-5b9e3e33de2e",
+  "source_path": "references/knowledge_base/Secondary Quality Control System/auto_ingested/二級品管制度.pdf",
+  "file_type": "pdf",
+  "business_category": "secondary_quality_control_system",
+  "matched_keywords": [
+    "secondary quality control system"
+  ],
+  "sha256": "35d9320f5f343e3c4705760afb27149af4149f3e7f7c6d3eef232c029469268c",
+  "extractor": "pypdf",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 2,
+  "updated_at": "2026-04-08T14:03:34+00:00"
+}

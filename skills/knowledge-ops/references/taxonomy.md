@@ -13,6 +13,12 @@ This skill classifies ingested documents along two axes.
 
 ## Business Category
 
+- `secondary_quality_control_system`
+  - Typical folder: `references/knowledge_base/Secondary Quality Control System`
+  - Keywords: `二級品管制度`, `二级品管制度`, `PO-PACIQADT-001`
+- `goods_exemption_system`
+  - Typical folder: `references/knowledge_base/Goods Exemption System`
+  - Keywords: `貨品免檢制度`, `货品免检制度`, `PO-PACIQADT-002`
 - `finished_inspection_process`
   - Typical folder: `references/knowledge_base/Finished Product Inspection Process`
   - Keywords: `成品查貨流程`, `成品查货流程`, `3.3a`, `3.3b`

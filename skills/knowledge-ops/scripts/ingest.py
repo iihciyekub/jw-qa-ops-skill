@@ -48,6 +48,20 @@ SUPPORTED_EXTENSIONS = {
 }
 
 BUSINESS_RULES = {
+    "secondary_quality_control_system": [
+        "二級品管制度",
+        "二级品管制度",
+        "二級品質管理",
+        "二级品质管理",
+        "po-paciqadt-001",
+    ],
+    "goods_exemption_system": [
+        "貨品免檢制度",
+        "货品免检制度",
+        "貨品免檢",
+        "货品免检",
+        "po-paciqadt-002",
+    ],
     "finished_inspection_process": [
         "finished product inspection process",
         "成品查貨流程",
@@ -101,6 +115,16 @@ BUSINESS_RULES = {
 }
 
 CATEGORY_PATH_HINTS = {
+    "secondary_quality_control_system": [
+        "secondary quality control system",
+        "二級品管制度",
+        "二级品管制度",
+    ],
+    "goods_exemption_system": [
+        "goods exemption system",
+        "貨品免檢制度",
+        "货品免检制度",
+    ],
     "finished_inspection_process": [
         "finished product inspection process",
     ],
@@ -127,6 +151,8 @@ CATEGORY_PATH_HINTS = {
 }
 
 CATEGORY_TO_FOLDER = {
+    "secondary_quality_control_system": "Secondary Quality Control System",
+    "goods_exemption_system": "Goods Exemption System",
     "finished_inspection_process": "Finished Product Inspection Process",
     "semi_finished_inspection_process": "Semi-finished Product Inspection Process",
     "quality_standard": "Quality Standards",
@@ -1004,8 +1030,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Ingest and preprocess skill knowledge files.")
     parser.add_argument(
         "--source",
+        action="append",
         default=None,
-        help="File or directory to ingest. Defaults to the skill inbox directory.",
+        help="File or directory to ingest. Repeat this flag to ingest multiple paths. Defaults to the skill inbox directory.",
     )
     parser.add_argument(
         "--force",
@@ -1021,20 +1048,29 @@ def main() -> int:
 
     skill_root = Path(__file__).resolve().parents[1]
     default_source = skill_root / "inbox"
-    source = Path(args.source).resolve() if args.source else default_source.resolve()
-
     ensure_directory(skill_root / "references" / "processed")
     ensure_directory(skill_root / "inbox")
     ensure_directory(skill_root / "references")
 
-    records = ingest_path(skill_root, source, force=args.force)
+    sources = [Path(source).resolve() for source in args.source] if args.source else [default_source.resolve()]
+    records: List[Dict[str, Any]] = []
+    for source in sources:
+        records.extend(ingest_path(skill_root, source, force=args.force))
     if args.rebuild_index:
         subprocess.run(
             ["python3", str(skill_root / "scripts" / "build_index.py")],
             check=True,
         )
 
-    print(json.dumps({"ingested": len(records), "source": str(source)}, ensure_ascii=False))
+    print(
+        json.dumps(
+            {
+                "ingested": len(records),
+                "sources": [str(source) for source in sources],
+            },
+            ensure_ascii=False,
+        )
+    )
     return 0
 
 
