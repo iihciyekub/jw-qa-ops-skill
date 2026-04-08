@@ -3,11 +3,11 @@
 Base path: `references/knowledge_base`
 
 ## Processed Snapshot
-- Registry entries: `29`
+- Registry entries: `33`
 - Processed root: `references/processed`
-- File types: `{'markdown': 21, 'pdf': 6, 'ppt': 2}`
-- Business categories: `{'defect_catalog': 13, 'finished_inspection_process': 3, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 4, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
-- Status counts: `{'ok': 29}`
+- File types: `{'markdown': 23, 'pdf': 8, 'ppt': 2}`
+- Business categories: `{'defect_catalog': 13, 'finished_inspection_process': 3, 'goods_exemption_system': 2, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 4, 'secondary_quality_control_system': 2, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
+- Status counts: `{'ok': 33}`
 
 ## Ingestion Workflow
 - New files should be ingested with `python3 scripts/ingest.py --source <path> --rebuild-index`.
@@ -34,6 +34,10 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.ppt`
 - `references/knowledge_base/Finished Product Inspection Process/data_structure.md`
 
+## Goods Exemption System
+- `references/knowledge_base/Goods Exemption System/auto_ingested/貨品免檢制度.pdf`
+- `references/knowledge_base/Goods Exemption System/data_structure.md`
+
 ## Order inspection plan development
 - `references/knowledge_base/Order inspection plan development/1.2a制定订单查货计划  clean.pdf`
 - `references/knowledge_base/Order inspection plan development/data_structure.md`
@@ -46,6 +50,10 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Quality Standards/data_structure.md`
 - `references/knowledge_base/Quality Standards/品质标准/品质标准.md`
 - `references/knowledge_base/Quality Standards/品质标准 260227.pdf`
+
+## Secondary Quality Control System
+- `references/knowledge_base/Secondary Quality Control System/auto_ingested/二級品管制度.pdf`
+- `references/knowledge_base/Secondary Quality Control System/data_structure.md`
 
 ## Semi-finished Product Inspection Process
 - `references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf`
@@ -76,6 +84,8 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.pdf` -> `references/processed/pdf-8c2d7f6512b2` | type=`pdf` | category=`finished_inspection_process` | status=`ok`
 - `references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.ppt` -> `references/processed/ppt-65104aed11f6` | type=`ppt` | category=`finished_inspection_process` | status=`ok`
 - `references/knowledge_base/Finished Product Inspection Process/data_structure.md` -> `references/processed/markdown-5ae78d63216f` | type=`markdown` | category=`finished_inspection_process` | status=`ok`
+- `references/knowledge_base/Goods Exemption System/auto_ingested/貨品免檢制度.pdf` -> `references/processed/pdf-16773eed3b4d` | type=`pdf` | category=`goods_exemption_system` | status=`ok`
+- `references/knowledge_base/Goods Exemption System/data_structure.md` -> `references/processed/markdown-c318c12b8ec4` | type=`markdown` | category=`goods_exemption_system` | status=`ok`
 - `references/knowledge_base/Order inspection plan development/1.2a制定订单查货计划  clean.pdf` -> `references/processed/pdf-f8880d58c175` | type=`pdf` | category=`inspection_plan` | status=`ok`
 - `references/knowledge_base/Order inspection plan development/data_structure.md` -> `references/processed/markdown-c81b6573d3a4` | type=`markdown` | category=`inspection_plan` | status=`ok`
 - `references/knowledge_base/Product Inspection and Inventory Check Guidelines/data_structure.md` -> `references/processed/markdown-72f2dd650305` | type=`markdown` | category=`inspection_guideline` | status=`ok`
@@ -83,6 +93,8 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Quality Standards/data_structure.md` -> `references/processed/markdown-2de2c933791b` | type=`markdown` | category=`quality_standard` | status=`ok`
 - `references/knowledge_base/Quality Standards/品质标准 260227.pdf` -> `references/processed/pdf-c81f083ff33e` | type=`pdf` | category=`quality_standard` | status=`ok`
 - `references/knowledge_base/Quality Standards/品质标准/品质标准.md` -> `references/processed/markdown-d1646562d914` | type=`markdown` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Secondary Quality Control System/auto_ingested/二級品管制度.pdf` -> `references/processed/pdf-5b9e3e33de2e` | type=`pdf` | category=`secondary_quality_control_system` | status=`ok`
+- `references/knowledge_base/Secondary Quality Control System/data_structure.md` -> `references/processed/markdown-07b9bbd5ddb6` | type=`markdown` | category=`secondary_quality_control_system` | status=`ok`
 - `references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf` -> `references/processed/pdf-483278d20044` | type=`pdf` | category=`semi_finished_inspection_process` | status=`ok`
 - `references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.ppt` -> `references/processed/ppt-ee953af2344b` | type=`ppt` | category=`semi_finished_inspection_process` | status=`ok`
 - `references/knowledge_base/Semi-finished Product Inspection Process/data_structure.md` -> `references/processed/markdown-497c92d9f34c` | type=`markdown` | category=`semi_finished_inspection_process` | status=`ok`

@@ -1,0 +1,17 @@
+{
+  "doc_id": "pdf-16773eed3b4d",
+  "source_path": "references/knowledge_base/Goods Exemption System/auto_ingested/貨品免檢制度.pdf",
+  "file_type": "pdf",
+  "business_category": "goods_exemption_system",
+  "matched_keywords": [
+    "goods exemption system"
+  ],
+  "sha256": "46c1b7c80a95f394a817d63fc5710349da81eacb6c85dd13c39f23ffee2465df",
+  "extractor": "pypdf",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 7,
+  "updated_at": "2026-04-08T14:03:34+00:00"
+}
