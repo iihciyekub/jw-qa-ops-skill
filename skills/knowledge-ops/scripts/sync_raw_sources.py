@@ -88,6 +88,19 @@ def list_source_files(source_dir: Path) -> List[Path]:
     return [path for path in sorted(source_dir.iterdir()) if is_supported_raw_file(path)]
 
 
+def declared_raw_files(skill_root: Path, source_dir_rel: str, config: Dict[str, Any]) -> List[str]:
+    source_dir = skill_root / RAW_SOURCES_DIR / source_dir_rel
+    source_file = config.get("source_file")
+    if source_file:
+        return [f"{RAW_SOURCES_DIR}/{source_dir_rel}/{source_file}"]
+    files = list_source_files(source_dir)
+    return [str(path.relative_to(skill_root)).replace("\\", "/") for path in files]
+
+
+def missing_declared_raw_files(skill_root: Path, raw_files: List[str]) -> List[str]:
+    return [raw_file for raw_file in raw_files if not (skill_root / raw_file).exists()]
+
+
 def ensure_directory(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
@@ -339,17 +352,20 @@ def check_linked_existing(
     config: Dict[str, Any],
     by_source_path: Dict[str, Dict[str, Any]],
 ) -> Dict[str, Any]:
+    raw_files = declared_raw_files(skill_root, source_dir_rel, config)
+    missing_raw = missing_declared_raw_files(skill_root, raw_files)
     targets = config.get("linked_targets", [])
     missing_files, missing_registry, missing_processed = check_registry_targets(skill_root, targets, by_source_path)
-    status = "ok" if not (missing_files or missing_registry or missing_processed) else "missing_outputs"
+    if missing_raw:
+        status = "raw_missing"
+    else:
+        status = "ok" if not (missing_files or missing_registry or missing_processed) else "missing_outputs"
     return {
         "status": status,
         "mode": "linked_existing",
         "source_dir": f"{RAW_SOURCES_DIR}/{source_dir_rel}",
-        "raw_files": [
-            str(path.relative_to(skill_root)).replace("\\", "/")
-            for path in list_source_files(skill_root / RAW_SOURCES_DIR / source_dir_rel)
-        ],
+        "raw_files": raw_files,
+        "missing_raw_files": missing_raw,
         "expected_targets": targets,
         "missing_files": missing_files,
         "missing_registry": missing_registry,
@@ -367,6 +383,7 @@ def check_direct_ingest(
         str(path.relative_to(skill_root)).replace("\\", "/")
         for path in list_source_files(source_dir)
     ]
+    missing_raw = missing_declared_raw_files(skill_root, raw_files)
     pending: List[str] = []
     processed_roots: List[str] = []
     for raw_file in raw_files:
@@ -377,12 +394,16 @@ def check_direct_ingest(
         for match in matches:
             processed_roots.append(match.get("processed_root", ""))
 
-    status = "ok" if raw_files and not pending else "pending_ingest"
+    if missing_raw or not raw_files:
+        status = "raw_missing"
+    else:
+        status = "ok" if not pending else "pending_ingest"
     return {
         "status": status,
         "mode": "direct_ingest",
         "source_dir": f"{RAW_SOURCES_DIR}/{source_dir_rel}",
         "raw_files": raw_files,
+        "missing_raw_files": missing_raw,
         "pending_origin_links": pending,
         "processed_roots": [root for root in processed_roots if root],
     }
@@ -394,6 +415,24 @@ def check_defect_catalog(
     config: Dict[str, Any],
     by_source_path: Dict[str, Dict[str, Any]],
 ) -> Dict[str, Any]:
+    raw_files = declared_raw_files(skill_root, source_dir_rel, config)
+    missing_raw = missing_declared_raw_files(skill_root, raw_files)
+    if missing_raw:
+        return {
+            "status": "raw_missing",
+            "mode": "defect_catalog_docx_split",
+            "source_dir": f"{RAW_SOURCES_DIR}/{source_dir_rel}",
+            "raw_files": raw_files,
+            "missing_raw_files": missing_raw,
+            "target_root": f"references/knowledge_base/Defect Analysis Table/{config['target_subcategory']}",
+            "expected_targets": [],
+            "missing_files": [],
+            "missing_registry": [],
+            "missing_processed": [],
+            "missing_assets": [],
+            "section_count": 0,
+        }
+
     plan = build_defect_catalog_plan(skill_root, source_dir_rel, config)
     expected_targets = [plan["target_data_structure_rel"]] + [section["md_rel"] for section in plan["sections"]]
     expected_assets = [image["dest_rel"] for section in plan["sections"] for image in section["images"]]
@@ -406,7 +445,8 @@ def check_defect_catalog(
         "status": status,
         "mode": "defect_catalog_docx_split",
         "source_dir": plan["source_dir_rel"],
-        "raw_files": [plan["source_file_rel"]],
+        "raw_files": raw_files,
+        "missing_raw_files": [],
         "target_root": plan["target_root_rel"],
         "expected_targets": expected_targets,
         "missing_files": missing_files,
