@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-5d6332ac0b6a",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/9-化妆痕/9-化妆痕.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "89d83adc7bf12504196f00a32139647d6ce5c1582d798d1fda056cde44f99eb9",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

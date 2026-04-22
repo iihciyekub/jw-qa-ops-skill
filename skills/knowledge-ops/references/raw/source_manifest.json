@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "default_mode": "direct_ingest",
+  "sources": {
+    "二級品管制度_20260408_pdf": {
+      "source_file": "二級品管制度_20260408.pdf",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前只校验其是否已对应到知识库中的 canonical PDF。",
+      "linked_targets": [
+        "references/knowledge_base/Secondary Quality Control System/auto_ingested/二級品管制度.pdf"
+      ]
+    },
+    "半成品查貨流程_260227_pptx": {
+      "source_file": "半成品查貨流程  260227.pptx",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前知识库保留的是已存在的 PDF/PPT 处理链路，因此这里只做覆盖映射检查。",
+      "linked_targets": [
+        "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
+        "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.ppt"
+      ]
+    },
+    "品質標準_260227_pdf": {
+      "source_file": "品質標準 260227.pdf",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前只校验其是否已对应到知识库中的 canonical PDF。",
+      "linked_targets": [
+        "references/knowledge_base/Quality Standards/品质标准 260227.pdf"
+      ]
+    },
+    "成品查貨流程_260227_pptx": {
+      "source_file": "成品查貨流程  260227.pptx",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前知识库保留的是已存在的 PDF/PPT 处理链路，因此这里只做覆盖映射检查。",
+      "linked_targets": [
+        "references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.pdf",
+        "references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.ppt"
+      ]
+    },
+    "查貨AI疵點分析模塊思路_4月牛仔_20260417_docx": {
+      "source_file": "查貨AI疵點分析模塊思路（4月牛仔）20260417.docx",
+      "mode": "defect_catalog_docx_split",
+      "note": "疵点分析表类 DOCX，按章节拆分到 Defect Analysis Table/牛仔裤。",
+      "target_subcategory": "牛仔裤",
+      "slug_overrides": {
+        "斷線": "断线",
+        "跳線": "跳线",
+        "污漬": "污渍",
+        "化妝痕": "化妆痕",
+        "不平服/容皱": "不平服-容皱",
+        "車線不直": "车线不直",
+        "燙工欠佳": "烫工欠佳",
+        "黃變": "黄变",
+        "斷拉架": "断拉架",
+        "駁線": "驳线",
+        "線頭": "线头",
+        "傾斜": "倾斜",
+        "車線不良": "车线不良",
+        "金屬輔料脫落/折斷": "金属辅料脱落-折断",
+        "金屬輔料氧化": "金属辅料氧化",
+        "侵權": "侵权"
+      }
+    },
+    "產品檢查及查貨工作指引_260227_pdf": {
+      "source_file": "產品檢查及查貨工作指引 260227.pdf",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前只校验其是否已对应到知识库中的 canonical PDF。",
+      "linked_targets": [
+        "references/knowledge_base/Product Inspection and Inventory Check Guidelines/产品检查及查货工作指引 260227.pdf"
+      ]
+    },
+    "貨品免檢制度_20260408_pdf": {
+      "source_file": "貨品免檢制度_20260408.pdf",
+      "mode": "linked_existing",
+      "note": "历史 raw 来源，当前只校验其是否已对应到知识库中的 canonical PDF。",
+      "linked_targets": [
+        "references/knowledge_base/Goods Exemption System/auto_ingested/貨品免檢制度.pdf"
+      ]
+    },
+    "針織圓領疵點分析模塊_260227_docx": {
+      "source_file": "針織圓領疵點分析模塊 260227.docx",
+      "mode": "defect_catalog_docx_split",
+      "note": "疵点分析表类 DOCX，按章节拆分到 Defect Analysis Table/针织圆领。",
+      "target_subcategory": "针织圆领",
+      "slug_overrides": {
+        "污漬": "污渍",
+        "尺寸問題": "尺寸问题",
+        "領圈容皺問題": "领圈褶皱问题",
+        "打褶問題": "打褶问题",
+        "色紗問題": "色纱问题",
+        "不對稱問題": "不对称问题",
+        "斷線": "断线",
+        "跳線": "跳线",
+        "侵權": "侵权"
+      }
+    }
+  }
+}

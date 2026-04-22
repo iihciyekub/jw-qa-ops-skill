@@ -6,12 +6,12 @@
   "matched_keywords": [
     "defect analysis table"
   ],
-  "sha256": "187d8a3995a11e33f5828d84252d07cc0cabc32fa8d6d4795afac0aab43e5e8b",
+  "sha256": "3bf07b11bdea08c3f7796a57efbd461ec9ba8c8d0f90966a4d62010eb54c2e69",
   "extractor": "markdown-direct",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 1,
-  "updated_at": "2026-03-12T03:19:53+00:00"
+  "updated_at": "2026-04-22T04:55:15+00:00"
 }

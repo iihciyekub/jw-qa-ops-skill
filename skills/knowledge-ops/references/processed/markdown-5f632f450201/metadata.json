@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-5f632f450201",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/3-断线/3-断线.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "0d3074ea83a74509e9d537fcf29cdb2f72c1ba5956df6a4a24f0e381fcc5d65e",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

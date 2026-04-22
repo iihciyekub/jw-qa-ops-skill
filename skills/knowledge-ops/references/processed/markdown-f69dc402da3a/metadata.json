@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-f69dc402da3a",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/8-污渍/8-污渍.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "467bbea7660e78c7f1aee5421ee93224de28d3467287b96df9a5e3e0c142cd9a",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

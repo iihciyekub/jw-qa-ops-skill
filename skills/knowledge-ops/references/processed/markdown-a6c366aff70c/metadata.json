@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-a6c366aff70c",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/7-子口外露/7-子口外露.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "2fae2df5602b6d7740a67aac7da27abde998076b67fc08d7a43c30cf4b07d977",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

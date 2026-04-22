@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-fefe121da0bf",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/23-金属辅料脱落-折断/23-金属辅料脱落-折断.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "976c132e29bd714d24a754d1213567d69e58a0de764a2485a5557829dfa04b47",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

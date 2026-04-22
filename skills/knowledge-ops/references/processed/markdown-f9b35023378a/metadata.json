@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-f9b35023378a",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/12-车线不直/12-车线不直.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "a99deada16bbdc9cc1333236c66993e43fc9e93f971a960e2d06b3c1c6b5ad87",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-f00c951f1b44",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/data_structure.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "471bc7d0d41f2b962bdafef1dbd478f41ea519e3fe4a720a3702f148d9755650",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

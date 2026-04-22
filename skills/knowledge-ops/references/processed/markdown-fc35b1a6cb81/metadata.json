@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-fc35b1a6cb81",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/4-跳线/4-跳线.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "f868eb60398c91b9894fa62be6b404dd4b40dedb98dfe904e5ce84a936d92073",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

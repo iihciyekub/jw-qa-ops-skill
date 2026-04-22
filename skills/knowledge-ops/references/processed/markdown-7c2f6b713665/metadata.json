@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-7c2f6b713665",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/17-断拉架/17-断拉架.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "78ba1b74d8bec676dee624b69c3e420b972a02b905977cfb8e05c83705fd23db",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-3202b4607fb9",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/21-主唛/21-主唛.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "b174da368c0243b478001800f283ef71bf16ed3d57c20dd9322f84c7f8482435",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

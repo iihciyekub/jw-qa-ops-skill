@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-b755c0f70c00",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/16-高低/16-高低.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "fe3e8710f345db049b17c040f9562942b8be0bf4e772c6b94eb88e640d7b6ff0",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

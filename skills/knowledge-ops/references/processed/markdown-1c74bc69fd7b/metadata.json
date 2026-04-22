@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-1c74bc69fd7b",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/15-反光/15-反光.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "b126d3017166713e58d1296d19a1771c1000d9ef438606bbf23412e79156f9ad",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

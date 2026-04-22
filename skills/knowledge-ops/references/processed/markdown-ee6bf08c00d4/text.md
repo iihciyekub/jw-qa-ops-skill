@@ -5,14 +5,18 @@
 - /Defect Analysis Table
   - 目录放置的文件说明:
     - `/Defect Analysis Table /針織圓領` 以针织圆领T恤为一个品类，总结了公司过往对于此品类中的质量问题的经验，包括不同的问题种类，问题发生阶段，问题类型，问题原因，问题说明，解决方法，预防措施。
-    - 其它的待补
+    - `/Defect Analysis Table /牛仔裤` 以牛仔裤为一个品类，总结了公司过往对于此品类中的质量问题的经验，包括不同的问题种类，问题发生阶段，问题类型，问题原因，问题说明，解决方法，预防措施。
 
 - `/Finished Product Inspection Proces`
   - 该目录下放置不同版本的成品查货流程的 PPT 文件
+- `/Goods Exemption System`
+  - 该目录放置不同版本的货品免检制度文件
 - `/Product Inspection and Inventory Check Guidelines`
   - 该上当放置不同版本的产品检查及查货工作指引的 pdf 文件
 - `/Quality Standards`
   - 该目录放置品质标准 pdf 文件
+- `/Secondary Quality Control System`
+  - 该目录放置不同版本的二级品管制度文件
 - `/Semi-finished Product Inspection Process
   - 该目录放置不同版本的半成品查貨流程 ppt 文件
 
@@ -33,3 +37,7 @@ l 品質標準.pdf：
 l 疵點AI分析表20260204.docx
 
 以针织圆领T恤为一个品类，总结了公司过往对于此品类中的质量问题的经验，包括不同的问题种类，问题发生阶段，问题类型，问题原因，问题说明，解决方法，预防措施。（内容较多，如果比较麻烦的话可以放在下一步实现。未来会有类似的其他品类服装的文件）
+
+l 查貨AI疵點分析模塊思路（4月牛仔）20260417.docx
+
+以牛仔裤为一个品类，总结了公司过往对于此品类中的质量问题的经验，包括不同的问题种类，问题发生阶段，问题类型，问题原因，问题说明，解决方法，预防措施。

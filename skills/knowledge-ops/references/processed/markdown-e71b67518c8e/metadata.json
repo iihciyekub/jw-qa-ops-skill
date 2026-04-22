@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-e71b67518c8e",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/2-打褶/2-打褶.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "a3866fcfcf664829940581e440bb484415e582397e454431111ed81eb241959f",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

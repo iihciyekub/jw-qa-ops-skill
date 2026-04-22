@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-663724f733d5",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/5-洗水痕/5-洗水痕.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "fbd3de3f0c52da837767289d160b0a5a4f906d10aa117a50f579747833c5b569",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

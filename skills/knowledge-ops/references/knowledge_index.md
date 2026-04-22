@@ -3,11 +3,11 @@
 Base path: `references/knowledge_base`
 
 ## Processed Snapshot
-- Registry entries: `33`
+- Registry entries: `59`
 - Processed root: `references/processed`
-- File types: `{'markdown': 23, 'pdf': 8, 'ppt': 2}`
-- Business categories: `{'defect_catalog': 13, 'finished_inspection_process': 3, 'goods_exemption_system': 2, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 4, 'secondary_quality_control_system': 2, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
-- Status counts: `{'ok': 33}`
+- File types: `{'markdown': 49, 'pdf': 8, 'ppt': 2}`
+- Business categories: `{'defect_catalog': 39, 'finished_inspection_process': 3, 'goods_exemption_system': 2, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 4, 'secondary_quality_control_system': 2, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
+- Status counts: `{'ok': 59}`
 
 ## Ingestion Workflow
 - New files should be ingested with `python3 scripts/ingest.py --source <path> --rebuild-index`.
@@ -16,6 +16,32 @@ Base path: `references/knowledge_base`
 
 ## Defect Analysis Table
 - `references/knowledge_base/Defect Analysis Table/data_structure.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/1-破洞/1-破洞.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/10-不平服-容皱/10-不平服-容皱.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/11-撕裂/11-撕裂.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/12-车线不直/12-车线不直.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/13-烫工欠佳/13-烫工欠佳.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/14-黄变/14-黄变.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/15-反光/15-反光.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/16-高低/16-高低.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/17-断拉架/17-断拉架.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/18-驳线/18-驳线.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/19-线头/19-线头.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/2-打褶/2-打褶.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/20-倾斜/20-倾斜.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/21-主唛/21-主唛.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/22-车线不良/22-车线不良.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/23-金属辅料脱落-折断/23-金属辅料脱落-折断.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/24-金属辅料氧化/24-金属辅料氧化.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/25-侵权/25-侵权.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/3-断线/3-断线.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/4-跳线/4-跳线.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/5-洗水痕/5-洗水痕.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/6-布次/6-布次.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/7-子口外露/7-子口外露.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/8-污渍/8-污渍.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/9-化妆痕/9-化妆痕.md`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/data_structure.md`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/1-破洞/1-破洞.md`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/10-跳线/10-跳线.md`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/11-侵权/11-侵权.md`
@@ -69,6 +95,32 @@ Base path: `references/knowledge_base`
 
 ## Registry Entries
 - `references/knowledge_base/Defect Analysis Table/data_structure.md` -> `references/processed/markdown-4156b3dfff90` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/1-破洞/1-破洞.md` -> `references/processed/markdown-fa1f5e218924` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/10-不平服-容皱/10-不平服-容皱.md` -> `references/processed/markdown-8f93825e4ca3` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/11-撕裂/11-撕裂.md` -> `references/processed/markdown-7244613d0116` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/12-车线不直/12-车线不直.md` -> `references/processed/markdown-f9b35023378a` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/13-烫工欠佳/13-烫工欠佳.md` -> `references/processed/markdown-24c595896d57` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/14-黄变/14-黄变.md` -> `references/processed/markdown-faf3e4af856e` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/15-反光/15-反光.md` -> `references/processed/markdown-1c74bc69fd7b` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/16-高低/16-高低.md` -> `references/processed/markdown-b755c0f70c00` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/17-断拉架/17-断拉架.md` -> `references/processed/markdown-7c2f6b713665` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/18-驳线/18-驳线.md` -> `references/processed/markdown-4948ef8291e4` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/19-线头/19-线头.md` -> `references/processed/markdown-8aa4e0214ab9` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/2-打褶/2-打褶.md` -> `references/processed/markdown-e71b67518c8e` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/20-倾斜/20-倾斜.md` -> `references/processed/markdown-703572a51ac3` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/21-主唛/21-主唛.md` -> `references/processed/markdown-3202b4607fb9` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/22-车线不良/22-车线不良.md` -> `references/processed/markdown-e29c5f0aa349` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/23-金属辅料脱落-折断/23-金属辅料脱落-折断.md` -> `references/processed/markdown-fefe121da0bf` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/24-金属辅料氧化/24-金属辅料氧化.md` -> `references/processed/markdown-3c772faea683` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/25-侵权/25-侵权.md` -> `references/processed/markdown-8326752cd5d0` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/3-断线/3-断线.md` -> `references/processed/markdown-5f632f450201` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/4-跳线/4-跳线.md` -> `references/processed/markdown-fc35b1a6cb81` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/5-洗水痕/5-洗水痕.md` -> `references/processed/markdown-663724f733d5` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/6-布次/6-布次.md` -> `references/processed/markdown-92e7837023de` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/7-子口外露/7-子口外露.md` -> `references/processed/markdown-a6c366aff70c` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/8-污渍/8-污渍.md` -> `references/processed/markdown-f69dc402da3a` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/9-化妆痕/9-化妆痕.md` -> `references/processed/markdown-5d6332ac0b6a` | type=`markdown` | category=`defect_catalog` | status=`ok`
+- `references/knowledge_base/Defect Analysis Table/牛仔裤/data_structure.md` -> `references/processed/markdown-f00c951f1b44` | type=`markdown` | category=`defect_catalog` | status=`ok`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/1-破洞/1-破洞.md` -> `references/processed/markdown-790ebe64371a` | type=`markdown` | category=`defect_catalog` | status=`ok`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/10-跳线/10-跳线.md` -> `references/processed/markdown-9e9ca370a5b1` | type=`markdown` | category=`defect_catalog` | status=`ok`
 - `references/knowledge_base/Defect Analysis Table/针织圆领/11-侵权/11-侵权.md` -> `references/processed/markdown-c5741b120161` | type=`markdown` | category=`defect_catalog` | status=`ok`

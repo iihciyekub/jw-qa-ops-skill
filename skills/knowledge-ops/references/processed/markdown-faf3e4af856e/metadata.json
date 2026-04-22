@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-faf3e4af856e",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/14-黄变/14-黄变.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "2e0a42af001573b987b6e1f22130722ccb5a1c09983144fe87038b3f61bd72a7",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

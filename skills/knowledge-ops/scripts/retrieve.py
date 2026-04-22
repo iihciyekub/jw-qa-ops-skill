@@ -22,6 +22,8 @@ QUERY_CATEGORY_HINTS = {
     "inspection_plan": ["订单查货计划", "訂單查貨計劃", "inspection plan"],
 }
 
+OVERVIEW_HINTS = ["哪些", "有哪些", "目录", "目錄", "总览", "總覽", "分类", "分類", "全部", "列表"]
+
 
 def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip().lower()
@@ -68,29 +70,68 @@ def score_text(query_tokens: Counter, text: str, weight: float) -> float:
     return score
 
 
-def score_chunk(query: str, query_tokens: Counter, chunk: Dict) -> float:
+def is_navigation_chunk(chunk: Dict) -> bool:
+    source_path = str(chunk.get("source_path", ""))
+    return source_path.endswith("/data_structure.md") or source_path == "references/knowledge_base/data_structure.md"
+
+
+def path_focus_score(query_tokens: Counter, source_path: str) -> float:
+    path = Path(source_path)
+    focused_parts = [path.parent.name, path.stem]
     score = 0.0
-    score += score_text(query_tokens, chunk.get("heading", ""), 4.0)
-    score += score_text(query_tokens, chunk.get("source_path", ""), 2.5)
-    score += score_text(query_tokens, chunk.get("text", ""), 1.0)
+    for part in focused_parts:
+        score += score_text(query_tokens, part, 3.5)
+    return score
+
+
+def has_overview_intent(query: str) -> bool:
+    normalized = normalize(query)
+    return any(hint in normalized for hint in OVERVIEW_HINTS)
+
+
+def score_chunk(query: str, query_tokens: Counter, chunk: Dict) -> float:
+    navigation_chunk = is_navigation_chunk(chunk)
+    overview_intent = has_overview_intent(query)
+    heading_weight = 2.0 if navigation_chunk else 4.0
+    source_weight = 2.0 if navigation_chunk else 2.5
+    text_weight = 0.35 if navigation_chunk else 1.0
+    coverage_weight = 1.0 if navigation_chunk else 4.0
+    text_phrase_bonus = 2.0 if navigation_chunk else 6.0
+    heading_phrase_bonus = 4.0 if navigation_chunk else 8.0
+
+    score = 0.0
+    score += score_text(query_tokens, chunk.get("heading", ""), heading_weight)
+    score += score_text(query_tokens, chunk.get("source_path", ""), source_weight)
+    score += score_text(query_tokens, chunk.get("text", ""), text_weight)
+    score += score_text(query_tokens, chunk.get("text", "").split("\n", 1)[0], 4.5)
 
     query_norm = normalize(query)
     text_norm = normalize(chunk.get("text", ""))
     heading_norm = normalize(chunk.get("heading", ""))
     if query_norm and query_norm in text_norm:
-        score += 6.0
+        score += text_phrase_bonus
     if query_norm and query_norm in heading_norm:
-        score += 8.0
+        score += heading_phrase_bonus
 
     query_terms = [token for token in tokenize(query) if len(token) > 1]
     if query_terms:
         matched_terms = sum(1 for token in query_terms if token in tokenize(chunk.get("text", "")))
         coverage = matched_terms / len(query_terms)
-        score += coverage * 4.0
+        score += coverage * coverage_weight
 
     location_value = str(chunk.get("location_value", ""))
     if location_value and query_norm and query_norm in normalize(location_value):
         score += 2.0
+
+    if not navigation_chunk:
+        score += path_focus_score(query_tokens, str(chunk.get("source_path", "")))
+    elif len(query_terms) >= 2:
+        # Navigation pages are useful fallbacks, but they should not outrank the
+        # concrete defect document when the query is already specific.
+        score -= 3.0
+
+    if navigation_chunk and overview_intent:
+        score += 18.0
 
     return score
 
@@ -151,6 +192,7 @@ def search(
                 "score": round(score, 4),
                 "doc_id": chunk["doc_id"],
                 "source_path": chunk["source_path"],
+                "is_navigation": is_navigation_chunk(chunk),
                 "business_category": record.get("business_category"),
                 "file_type": record.get("file_type"),
                 "location_label": chunk.get("location_label"),
@@ -163,6 +205,7 @@ def search(
     results.sort(
         key=lambda item: (
             item["score"],
+            not item["is_navigation"],
             -len(item["preview"]),
             item["source_path"],
         ),

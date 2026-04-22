@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-703572a51ac3",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/20-倾斜/20-倾斜.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "f7899b8e8d78df35ed21857f709d98a3160c6b0633f67a559c6efe10cf9b3087",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-fa1f5e218924",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/1-破洞/1-破洞.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "13b78dfc7df3ffa93f202b850a9d3adccc157e782e4e3fe70f4ae0f05dba950f",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

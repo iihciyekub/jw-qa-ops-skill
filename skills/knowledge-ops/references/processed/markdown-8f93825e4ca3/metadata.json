@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-8f93825e4ca3",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/10-不平服-容皱/10-不平服-容皱.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "2ba1df1acbe65428a73967843ce53c10086b1a0faf0ae6f1034ad97e3769d33a",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

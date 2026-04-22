@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-04-22T05:14:54+00:00",
+  "entries": [
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/二級品管制度_20260408_pdf",
+      "raw_files": [
+        "references/raw/sources/二級品管制度_20260408_pdf/二級品管制度_20260408.pdf"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Secondary Quality Control System/auto_ingested/二級品管制度.pdf"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/半成品查貨流程_260227_pptx",
+      "raw_files": [
+        "references/raw/sources/半成品查貨流程_260227_pptx/半成品查貨流程  260227.pptx"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
+        "references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.ppt"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/品質標準_260227_pdf",
+      "raw_files": [
+        "references/raw/sources/品質標準_260227_pdf/品質標準 260227.pdf"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Quality Standards/品质标准 260227.pdf"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/成品查貨流程_260227_pptx",
+      "raw_files": [
+        "references/raw/sources/成品查貨流程_260227_pptx/成品查貨流程  260227.pptx"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.pdf",
+        "references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.ppt"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "defect_catalog_docx_split",
+      "source_dir": "references/raw/sources/查貨AI疵點分析模塊思路_4月牛仔_20260417_docx",
+      "raw_files": [
+        "references/raw/sources/查貨AI疵點分析模塊思路_4月牛仔_20260417_docx/查貨AI疵點分析模塊思路（4月牛仔）20260417.docx"
+      ],
+      "target_root": "references/knowledge_base/Defect Analysis Table/牛仔裤",
+      "expected_targets": [
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/data_structure.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/1-破洞/1-破洞.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/2-打褶/2-打褶.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/3-断线/3-断线.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/4-跳线/4-跳线.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/5-洗水痕/5-洗水痕.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/6-布次/6-布次.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/7-子口外露/7-子口外露.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/8-污渍/8-污渍.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/9-化妆痕/9-化妆痕.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/10-不平服-容皱/10-不平服-容皱.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/11-撕裂/11-撕裂.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/12-车线不直/12-车线不直.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/13-烫工欠佳/13-烫工欠佳.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/14-黄变/14-黄变.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/15-反光/15-反光.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/16-高低/16-高低.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/17-断拉架/17-断拉架.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/18-驳线/18-驳线.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/19-线头/19-线头.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/20-倾斜/20-倾斜.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/21-主唛/21-主唛.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/22-车线不良/22-车线不良.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/23-金属辅料脱落-折断/23-金属辅料脱落-折断.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/24-金属辅料氧化/24-金属辅料氧化.md",
+        "references/knowledge_base/Defect Analysis Table/牛仔裤/25-侵权/25-侵权.md"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": [],
+      "missing_assets": [],
+      "section_count": 25
+    },
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/產品檢查及查貨工作指引_260227_pdf",
+      "raw_files": [
+        "references/raw/sources/產品檢查及查貨工作指引_260227_pdf/產品檢查及查貨工作指引 260227.pdf"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Product Inspection and Inventory Check Guidelines/产品检查及查货工作指引 260227.pdf"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "linked_existing",
+      "source_dir": "references/raw/sources/貨品免檢制度_20260408_pdf",
+      "raw_files": [
+        "references/raw/sources/貨品免檢制度_20260408_pdf/貨品免檢制度_20260408.pdf"
+      ],
+      "expected_targets": [
+        "references/knowledge_base/Goods Exemption System/auto_ingested/貨品免檢制度.pdf"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": []
+    },
+    {
+      "status": "ok",
+      "mode": "defect_catalog_docx_split",
+      "source_dir": "references/raw/sources/針織圓領疵點分析模塊_260227_docx",
+      "raw_files": [
+        "references/raw/sources/針織圓領疵點分析模塊_260227_docx/針織圓領疵點分析模塊 260227.docx"
+      ],
+      "target_root": "references/knowledge_base/Defect Analysis Table/针织圆领",
+      "expected_targets": [
+        "references/knowledge_base/Defect Analysis Table/针织圆领/data_structure.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/1-破洞/1-破洞.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/2-污渍/2-污渍.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/3-色差/3-色差.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/4-尺寸问题/4-尺寸问题.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/5-领圈褶皱问题/5-领圈褶皱问题.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/6-打褶问题/6-打褶问题.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/7-色纱问题/7-色纱问题.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/8-不对称问题/8-不对称问题.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/9-断线/9-断线.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/10-跳线/10-跳线.md",
+        "references/knowledge_base/Defect Analysis Table/针织圆领/11-侵权/11-侵权.md"
+      ],
+      "missing_files": [],
+      "missing_registry": [],
+      "missing_processed": [],
+      "missing_assets": [],
+      "section_count": 11
+    }
+  ],
+  "status_counts": {
+    "ok": 8
+  }
+}

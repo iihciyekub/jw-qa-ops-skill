@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-8aa4e0214ab9",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/19-线头/19-线头.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "ced5d97513eb4517f938ad25d2655960f6ba4c613ad9e3e9cccc00795c5e9f83",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

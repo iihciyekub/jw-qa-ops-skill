@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-24c595896d57",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/13-烫工欠佳/13-烫工欠佳.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "b85d2283fc2d0769208cd5e9ef6f85900b7b6505136bdf822daf14a2b6990c1d",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-7244613d0116",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/11-撕裂/11-撕裂.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "60bdcdf8c03668b27f05e2f7cbc50bd5822350a2e25c0d07b31ac9ff6372ac9b",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "doc_id": "markdown-3c772faea683",
+  "source_path": "references/knowledge_base/Defect Analysis Table/牛仔裤/24-金属辅料氧化/24-金属辅料氧化.md",
+  "file_type": "markdown",
+  "business_category": "defect_catalog",
+  "matched_keywords": [
+    "defect analysis table"
+  ],
+  "sha256": "f9e687ee5031c4cafbc9919e24ef6650fc2bac7081769b28016abc082fd6a94f",
+  "extractor": "markdown-direct",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-04-22T04:55:15+00:00"
+}

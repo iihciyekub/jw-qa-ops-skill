@@ -9,12 +9,12 @@
     "品质标准",
     "抽样"
   ],
-  "sha256": "19cbe2f4b2f7bfcfbcd19990e2e40ba74895d2f0583b8b00c594b953af388094",
+  "sha256": "c18c352ae4b81a2d45e5aaca6e488959f3f97e4f12f28e4fd2abe07212cb8e84",
   "extractor": "markdown-direct",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 1,
-  "updated_at": "2026-03-12T03:19:58+00:00"
+  "updated_at": "2026-04-22T04:55:15+00:00"
 }
