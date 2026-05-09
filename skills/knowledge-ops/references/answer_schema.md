@@ -9,6 +9,8 @@ Use this schema when the skill answers questions from the knowledge base. The go
 - Keep citations separate from prose so the UI can style them consistently.
 - If evidence is weak, say so in both Markdown and blocks.
 - Apply strict anonymization before returning any user-facing text. Company, department, app, platform, bot, generated-by, watermark, and signature names must be replaced with generic labels.
+- In user-facing citations, show only an anonymized file name and location. Do not show full or relative source paths in `answer_md`, `plain_text`, citation labels, captions, or visible blocks.
+- When visual evidence is relevant, include image blocks or a compact image gallery, but keep captions and source labels anonymized.
 
 ## Privacy Labels
 
@@ -20,7 +22,7 @@ Use these labels consistently in `answer_md`, `plain_text`, `blocks`, citation d
 - App, system, platform, workflow, or bot: `匿名系统`
 - Signature, watermark, generated-by footer, or source footer: `匿名署名`
 
-Raw source paths may remain in machine-readable `citations.path` for traceability, but visible citation labels should be anonymized when they contain protected names.
+Raw source paths may remain in machine-readable `citations.path` and image `path` fields for traceability or rendering, but visible citation labels should be anonymized file names only.
 
 ## Recommended Response Object
 
@@ -51,7 +53,21 @@ Raw source paths may remain in machine-readable `citations.path` for traceabilit
         {
           "path": "string",
           "location": "string",
-          "label": "string"
+          "label": "string",
+          "display_filename": "string"
+        }
+      ]
+    },
+    {
+      "type": "images",
+      "title": "string",
+      "items": [
+        {
+          "path": "string",
+          "alt": "string",
+          "caption": "string",
+          "source_label": "string",
+          "location": "string"
         }
       ]
     },
@@ -66,7 +82,8 @@ Raw source paths may remain in machine-readable `citations.path` for traceabilit
     {
       "path": "string",
       "location": "string",
-      "label": "string"
+      "label": "string",
+      "display_filename": "string"
     }
   ],
   "confidence": "high | medium | low"
@@ -117,6 +134,21 @@ Even in a minimal answer, include these:
   - `path`
   - `location`
   - `label`
+- `path` is machine-readable only. Do not print it in visible answer text.
+- `label` and `display_filename` must be anonymized file names, not full paths.
+
+### `images`
+
+- Use when the user asks to see images, defect photos, screenshots, samples, appearance examples, or when images materially support the answer.
+- Present only directly relevant images, usually 1-6 items.
+- Each item should include:
+  - `path`: absolute local path or renderable asset path for the UI
+  - `alt`: short anonymized alt text
+  - `caption`: what the image demonstrates
+  - `source_label`: anonymized file name only
+  - `location`: page, slide, section, or image number
+- Do not display raw images that visibly contain company, brand, department, app, signature, watermark, email, or internal URL text. Redact/crop first when feasible; otherwise withhold the image and explain with a `warning` block.
+- In Markdown rendering, image URLs may use absolute local paths when required by the client, but captions and citations must not repeat those paths.
 
 ### `warning`
 
@@ -142,7 +174,7 @@ The `answer_md` field should usually follow this pattern:
 
 ## 引用
 
-- 来源：`path` (location)
+- 来源：`匿名文件名.ext` (location)
 
 ## 备注
 
@@ -163,9 +195,21 @@ For ambiguous questions, use this navigation-first pattern instead:
 请确认你要查哪一类；如果其中一个方向明显最接近，我可以先按该方向给出临时结论。
 ```
 
+When images are relevant, add this section before citations:
+
+```md
+## 相关图片
+
+![匿名图片说明](/absolute/renderable/path/to/image.png)
+
+图 1：图片说明。来源：匿名文件名.ext (location)
+```
+
 ## Citation Rules
 
 - Cite only files that were retrieved or opened.
+- Visible citations must show only an anonymized file name, not the source path.
+- Keep full source paths only in machine-readable fields such as `citations.path`.
 - Prefer exact locations:
   - PDF: `p. 12`
   - PPT/PPTX: `slide 5`

@@ -32,11 +32,14 @@ Apply the filter to:
 - Final prose answers
 - Evidence excerpts and previews
 - Navigation options
+- Image captions, gallery titles, and visual evidence notes
 - Tables and bullets
 - Citation labels and displayed file titles
 - Any text copied from `processed`, `knowledge_base`, or raw sources
 
 Do not output raw company, department, app, or signature names even when they appear in retrieved chunks. If anonymization would make a citation path less readable, keep the machine-readable path only when needed for traceability, but use an anonymized display label in the answer.
+
+For user-facing citations, display only the anonymized file name plus location. Do not show full or relative source paths in the `引用` section.
 
 ## Skill Layout
 
@@ -107,6 +110,16 @@ Start with `python3 scripts/retrieve.py --query "<question>"`. Back it up with `
 5. Extract evidence  
 Capture the exact statements needed to answer the question. Track file path and location (page/slide/section heading).
 
+5a. Present visual evidence when the answer depends on images  
+When the user asks to see images, defect photos, screenshots, samples, appearance examples, or when the directly relevant document contains images that materially support the answer, check the matched document for image references.
+- Markdown defect-catalog files may reference images as `images/media/...`; resolve them relative to the source Markdown file under `references/knowledge_base/`.
+- Present up to 3-6 directly relevant images, ordered by relevance to the answer.
+- Use absolute local paths only inside machine-readable image fields or Markdown image URLs required for rendering; do not repeat full paths in captions or citations.
+- Captions must explain what the image supports and must pass the privacy filter.
+- If an image visibly contains company, brand, department, app, signature, watermark, email, or internal URL text, do not display the raw image. Redact/crop it first when feasible; otherwise describe the visual evidence and state that the image was withheld for privacy.
+- For PDF or PPT/PPTX evidence where a single embedded image is not available, render the relevant page or slide image only when needed, then cite the source by anonymized file name and page/slide.
+- If image-only evidence requires OCR to answer accurately, state that OCR is required before giving a final answer.
+
 6. Compose the response  
 Summarize clearly, then list evidence with citations. If the answer is not present, say so and point to what was checked.
 
@@ -149,12 +162,13 @@ Minimum sections in `answer_md`:
 
 - `结论`: direct answer in 2-6 lines
 - `依据`: short bullets summarizing the supporting points
-- `引用`: one line per source with file path and location
+- `相关图片`: only when visual evidence is directly useful
+- `引用`: one line per source with anonymized file name and location
 
 Citation style examples:
-- `來源: references/knowledge_base/Quality Standards/品質標準 260227.pdf (p. 12)`
-- `來源: references/knowledge_base/Finished Product Inspection Process/BP-PACIQADT-001 4.8成品查貨流程  260227.ppt (slide 5)`
-- `來源: references/knowledge_base/Defect Analysis Table/针织圆领/8-不对称问题/8-不对称问题.md (section: 檢驗要點)`
+- `來源: 匿名文件.pdf (p. 12)`
+- `來源: 匿名流程文件.ppt (slide 5)`
+- `來源: 8-不对称问题.md (section: 檢驗要點)`
 
 Never cite a file you did not open and verify.
 

@@ -239,6 +239,11 @@ def make_preview(text: str, limit: int = 240) -> str:
     return compact[: limit - 1] + "…"
 
 
+def display_filename(source_path: str) -> str:
+    sanitized_path = sanitize_text(source_path)
+    return Path(sanitized_path).name or sanitized_path
+
+
 def search(
     query: str,
     registry: Dict[str, Dict],
@@ -277,6 +282,7 @@ def search(
                 "doc_id": chunk["doc_id"],
                 "source_path": chunk["source_path"],
                 "display_source_path": sanitize_text(chunk["source_path"]),
+                "display_filename": display_filename(chunk["source_path"]),
                 "is_navigation": is_navigation_chunk(chunk),
                 "business_category": record.get("business_category"),
                 "file_type": record.get("file_type"),
@@ -307,7 +313,7 @@ def render_text(results: List[Dict]) -> str:
         lines.extend(
             [
                 f"{index}. score={item['score']}",
-                f"   source={item.get('display_source_path', item['source_path'])}",
+                f"   source={item.get('display_filename') or item.get('display_source_path', item['source_path'])}",
                 f"   type={item['file_type']} category={item['business_category']}",
                 f"   location={item['location_label']}:{item['location_value']}",
                 f"   heading={item['heading']}",
