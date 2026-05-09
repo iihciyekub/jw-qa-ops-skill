@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-07a136d1ee08",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/鞋子品質標準(中文版）.doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "7babf3eae3c4068e59fd87f4b557d703362063dd6b88c98a51edb23ddfb36281",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}

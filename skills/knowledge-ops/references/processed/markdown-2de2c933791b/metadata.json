@@ -6,12 +6,12 @@
   "matched_keywords": [
     "quality standards"
   ],
-  "sha256": "15ddc3d37fbd20bd2f0037bedba5ed27a450b47a9eceb82fa9d94d7f5e72beb2",
+  "sha256": "aac92d809f2e21b5c77d22d10f91fed36c48032bded9f4b0ae7ae7ebcba4cfd4",
   "extractor": "markdown-direct",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
-  "chunk_count": 17,
-  "updated_at": "2026-03-12T03:19:54+00:00"
+  "chunk_count": 18,
+  "updated_at": "2026-05-08T02:17:12+00:00"
 }

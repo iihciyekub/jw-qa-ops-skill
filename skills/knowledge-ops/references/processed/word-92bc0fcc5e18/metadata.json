@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-92bc0fcc5e18",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/童裝內衣品質標準(中文版）.doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "ecc4dd8e93441cf70a325728be1c1d04c31c9e15eaf72001e22753a5854f17b7",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}

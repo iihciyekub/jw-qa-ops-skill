@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-53a96a7404be",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/童裝泳衣品質標準(中文版).doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "4bb2b486f595c782a015ea8830bb714c9c9109b33ad63f1a4cf3311065c8ac52",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}

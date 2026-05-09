@@ -11,6 +11,33 @@ This skill is QA-first. Answer user questions by extracting verifiable content f
 
 Use `raw` processing only when the user has added new source files or when coverage needs to be checked. Day-to-day QA should rely on `references/processed/`, `references/registry.jsonl`, and `references/knowledge_base/`, not on `references/raw/`.
 
+## Highest Priority Privacy Filter
+
+All user-facing answers must pass a strict anonymization filter before output. This rule has higher priority than citation fidelity, wording preservation, and source quotation.
+
+Always anonymize:
+- Company, organization, brand, supplier, customer, or partner names.
+- Department, team, center, office, business unit, and functional group names.
+- App, system, platform, bot, workflow, watermark, generated-by text, or signature names.
+- Email-like identifiers, account names, internal URLs, and other source signatures if they appear in extracted text.
+
+Use stable generic labels:
+- Company or organization: `匿名组织`
+- Brand: `匿名品牌`
+- Department or team: `相关部门`
+- App, system, platform, or bot: `匿名系统`
+- Signature, watermark, or generated-by footer: `匿名署名`
+
+Apply the filter to:
+- Final prose answers
+- Evidence excerpts and previews
+- Navigation options
+- Tables and bullets
+- Citation labels and displayed file titles
+- Any text copied from `processed`, `knowledge_base`, or raw sources
+
+Do not output raw company, department, app, or signature names even when they appear in retrieved chunks. If anonymization would make a citation path less readable, keep the machine-readable path only when needed for traceability, but use an anonymized display label in the answer.
+
 ## Skill Layout
 
 Use this directory layout when resolving files:
@@ -57,6 +84,22 @@ If the user stores source files under `references/raw/sources/`, keep those file
 
 3. Clarify the question scope  
 If the user request is vague (product type, process stage, defect name), ask a brief clarifying question before searching.
+
+3a. Navigate ambiguous questions before answering  
+If the user question is broad or could map to multiple knowledge areas, do not force a single answer too early. First provide a small navigation set, then ask the user to choose or confirm the intended direction.
+
+Trigger navigation when:
+- The query lacks product type, process stage, defect name, document category, or acceptance context.
+- Retrieval results span multiple business categories or unrelated source folders.
+- The top matches have similar scores but point to different topics.
+- The user asks broad questions such as "怎么处理", "标准是什么", "有哪些", "流程是什么", or "这个可以接受吗".
+
+Navigation response rules:
+- Offer 3-6 likely directions as concise options.
+- For each option, include the matched topic or source category in one short phrase.
+- If one direction is clearly dominant, give a short provisional answer and still show related follow-up directions.
+- If the answer would materially differ by direction, ask the user to choose before giving a final answer.
+- Cite only retrieved or opened sources; do not cite a navigation option as evidence unless its source was checked.
 
 4. Retrieve from processed outputs first  
 Start with `python3 scripts/retrieve.py --query "<question>"`. Back it up with `references/registry.jsonl`, `references/knowledge_index.md`, and `references/processed/<doc_id>/chunks.jsonl`. Use raw files only when cache is missing or evidence needs verification.

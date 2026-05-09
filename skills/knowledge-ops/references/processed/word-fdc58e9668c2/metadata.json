@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-fdc58e9668c2",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/襪子品質標準(中文版）.doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "89f3cb34d9fb66952da218c709902cbb8369dcec97c0c3f5757a0719a5456587",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}

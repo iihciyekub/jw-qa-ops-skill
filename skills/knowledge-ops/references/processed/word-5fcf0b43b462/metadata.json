@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-5fcf0b43b462",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/審款.三標.違規操作品質標準（中文版）.docx",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "dbb07b628e94cd45738fcf7217a2211fd2757a6bcc0a8d3b87643f2a1e944494",
+  "extractor": "python-docx",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 4,
+  "updated_at": "2026-05-08T02:16:14+00:00"
+}

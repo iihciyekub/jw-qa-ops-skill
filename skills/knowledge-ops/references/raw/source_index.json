@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-04-22T05:21:18+00:00",
+  "generated_at": "2026-05-09T02:07:06+00:00",
   "entries": [
+    {
+      "status": "ok",
+      "mode": "direct_ingest",
+      "source_dir": "references/raw/sources/品质标准pdf的补充文件",
+      "raw_files": [
+        "references/raw/sources/品质标准pdf的补充文件/嬰幼兒針織品質標準（中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/審款.三標.違規操作品質標準（中文版）.docx",
+        "references/raw/sources/品质标准pdf的补充文件/童裝內衣品質標準(中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/童裝梭織品質標準(中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/童裝毛織品質標準（中文版）.docx",
+        "references/raw/sources/品质标准pdf的补充文件/童裝泳衣品質標準(中文版).doc",
+        "references/raw/sources/品质标准pdf的补充文件/童裝襪子品質標準(中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/童裝針織品質標準（中文版 ).docx",
+        "references/raw/sources/品质标准pdf的补充文件/箱包品質標準(中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/腰帶品質標準(中文版).doc",
+        "references/raw/sources/品质标准pdf的补充文件/襪子品質標準(中文版）.doc",
+        "references/raw/sources/品质标准pdf的补充文件/鞋子品質標準(中文版）.doc"
+      ],
+      "missing_raw_files": [],
+      "pending_origin_links": [],
+      "processed_roots": [
+        "references/processed/word-4ac3a0a3cc9c",
+        "references/processed/word-5fcf0b43b462",
+        "references/processed/word-92bc0fcc5e18",
+        "references/processed/word-7fd190cf2fb7",
+        "references/processed/word-5b3b79de0e5b",
+        "references/processed/word-53a96a7404be",
+        "references/processed/word-a96ff9a54e9b",
+        "references/processed/word-04aa0c8bc5ca",
+        "references/processed/word-8ef55b26cc9e",
+        "references/processed/word-52b091aba18a",
+        "references/processed/word-fdc58e9668c2",
+        "references/processed/word-07a136d1ee08"
+      ]
+    },
     {
       "status": "raw_missing",
       "mode": "defect_catalog_docx_split",
@@ -21,6 +56,7 @@
     }
   ],
   "status_counts": {
+    "ok": 1,
     "raw_missing": 1
   }
 }

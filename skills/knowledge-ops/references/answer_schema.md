@@ -8,6 +8,19 @@ Use this schema when the skill answers questions from the knowledge base. The go
 - Also structure the same answer into lightweight render blocks for frontend display.
 - Keep citations separate from prose so the UI can style them consistently.
 - If evidence is weak, say so in both Markdown and blocks.
+- Apply strict anonymization before returning any user-facing text. Company, department, app, platform, bot, generated-by, watermark, and signature names must be replaced with generic labels.
+
+## Privacy Labels
+
+Use these labels consistently in `answer_md`, `plain_text`, `blocks`, citation display labels, previews, and table cells:
+
+- Company, organization, supplier, customer, or partner: `匿名组织`
+- Brand: `匿名品牌`
+- Department, team, center, office, or business unit: `相关部门`
+- App, system, platform, workflow, or bot: `匿名系统`
+- Signature, watermark, generated-by footer, or source footer: `匿名署名`
+
+Raw source paths may remain in machine-readable `citations.path` for traceability, but visible citation labels should be anonymized when they contain protected names.
 
 ## Recommended Response Object
 
@@ -20,6 +33,18 @@ Use this schema when the skill answers questions from the knowledge base. The go
     { "type": "summary", "text": "string" },
     { "type": "paragraph", "text": "string" },
     { "type": "bullets", "items": ["string"] },
+    {
+      "type": "navigation",
+      "title": "string",
+      "items": [
+        {
+          "label": "string",
+          "query": "string",
+          "reason": "string",
+          "source_category": "string"
+        }
+      ]
+    },
     {
       "type": "citations",
       "items": [
@@ -74,6 +99,17 @@ Even in a minimal answer, include these:
 - Use for procedural steps, evidence lists, or extracted points.
 - Avoid nested bullets.
 
+### `navigation`
+
+- Use when the user question is broad, underspecified, or likely to map to multiple knowledge areas.
+- Present 3-6 concise directions the user can choose from.
+- Each item should include:
+  - `label`: short display text for the option
+  - `query`: the follow-up retrieval query or refined user question
+  - `reason`: why this direction is relevant
+  - `source_category`: the likely business category, such as `quality_standard`, `defect_catalog`, or `finished_inspection_process`
+- Do not treat navigation items as final evidence. Only cite sources that were retrieved or opened.
+
 ### `citations`
 
 - Use for source display.
@@ -111,6 +147,20 @@ The `answer_md` field should usually follow this pattern:
 ## 备注
 
 - 可选。只有在证据不足、OCR 缺失或信息存在限制时才写。
+```
+
+For ambiguous questions, use this navigation-first pattern instead:
+
+```md
+# 需要确认方向
+
+你的问题可能对应以下几类资料：
+
+1. ...
+2. ...
+3. ...
+
+请确认你要查哪一类；如果其中一个方向明显最接近，我可以先按该方向给出临时结论。
 ```
 
 ## Citation Rules

@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-52b091aba18a",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/腰帶品質標準(中文版).doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "4a943631479329e544f87b54190ee2db3c4fb62138c17a6e73fb2aae8e51fe64",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}

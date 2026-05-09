@@ -3,11 +3,11 @@
 Base path: `references/knowledge_base`
 
 ## Processed Snapshot
-- Registry entries: `59`
+- Registry entries: `71`
 - Processed root: `references/processed`
-- File types: `{'markdown': 49, 'pdf': 8, 'ppt': 2}`
-- Business categories: `{'defect_catalog': 39, 'finished_inspection_process': 3, 'goods_exemption_system': 2, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 4, 'secondary_quality_control_system': 2, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
-- Status counts: `{'ok': 59}`
+- File types: `{'markdown': 49, 'pdf': 8, 'ppt': 2, 'word': 12}`
+- Business categories: `{'defect_catalog': 39, 'finished_inspection_process': 3, 'goods_exemption_system': 2, 'inspection_guideline': 2, 'inspection_plan': 2, 'quality_standard': 16, 'secondary_quality_control_system': 2, 'semi_finished_inspection_process': 3, 'work_guideline': 2}`
+- Status counts: `{'ok': 71}`
 
 ## Ingestion Workflow
 - New files should be ingested with `python3 scripts/ingest.py --source <path> --rebuild-index`.
@@ -73,6 +73,18 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Product Inspection and Inventory Check Guidelines/产品检查及查货工作指引 260227.pdf`
 
 ## Quality Standards
+- `references/knowledge_base/Quality Standards/auto_ingested/嬰幼兒針織品質標準（中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/審款.三標.違規操作品質標準（中文版）.docx`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝內衣品質標準(中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝梭織品質標準(中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝毛織品質標準（中文版）.docx`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝泳衣品質標準(中文版).doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝襪子品質標準(中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝針織品質標準（中文版 ).docx`
+- `references/knowledge_base/Quality Standards/auto_ingested/箱包品質標準(中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/腰帶品質標準(中文版).doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/襪子品質標準(中文版）.doc`
+- `references/knowledge_base/Quality Standards/auto_ingested/鞋子品質標準(中文版）.doc`
 - `references/knowledge_base/Quality Standards/data_structure.md`
 - `references/knowledge_base/Quality Standards/品质标准/品质标准.md`
 - `references/knowledge_base/Quality Standards/品质标准 260227.pdf`
@@ -142,6 +154,18 @@ Base path: `references/knowledge_base`
 - `references/knowledge_base/Order inspection plan development/data_structure.md` -> `references/processed/markdown-c81b6573d3a4` | type=`markdown` | category=`inspection_plan` | status=`ok`
 - `references/knowledge_base/Product Inspection and Inventory Check Guidelines/data_structure.md` -> `references/processed/markdown-72f2dd650305` | type=`markdown` | category=`inspection_guideline` | status=`ok`
 - `references/knowledge_base/Product Inspection and Inventory Check Guidelines/产品检查及查货工作指引 260227.pdf` -> `references/processed/pdf-b445ba8ba6d6` | type=`pdf` | category=`inspection_guideline` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/嬰幼兒針織品質標準（中文版）.doc` -> `references/processed/word-4ac3a0a3cc9c` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/審款.三標.違規操作品質標準（中文版）.docx` -> `references/processed/word-5fcf0b43b462` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝內衣品質標準(中文版）.doc` -> `references/processed/word-92bc0fcc5e18` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝梭織品質標準(中文版）.doc` -> `references/processed/word-7fd190cf2fb7` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝毛織品質標準（中文版）.docx` -> `references/processed/word-5b3b79de0e5b` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝泳衣品質標準(中文版).doc` -> `references/processed/word-53a96a7404be` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝襪子品質標準(中文版）.doc` -> `references/processed/word-a96ff9a54e9b` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/童裝針織品質標準（中文版 ).docx` -> `references/processed/word-04aa0c8bc5ca` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/箱包品質標準(中文版）.doc` -> `references/processed/word-8ef55b26cc9e` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/腰帶品質標準(中文版).doc` -> `references/processed/word-52b091aba18a` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/襪子品質標準(中文版）.doc` -> `references/processed/word-fdc58e9668c2` | type=`word` | category=`quality_standard` | status=`ok`
+- `references/knowledge_base/Quality Standards/auto_ingested/鞋子品質標準(中文版）.doc` -> `references/processed/word-07a136d1ee08` | type=`word` | category=`quality_standard` | status=`ok`
 - `references/knowledge_base/Quality Standards/data_structure.md` -> `references/processed/markdown-2de2c933791b` | type=`markdown` | category=`quality_standard` | status=`ok`
 - `references/knowledge_base/Quality Standards/品质标准 260227.pdf` -> `references/processed/pdf-c81f083ff33e` | type=`pdf` | category=`quality_standard` | status=`ok`
 - `references/knowledge_base/Quality Standards/品质标准/品质标准.md` -> `references/processed/markdown-d1646562d914` | type=`markdown` | category=`quality_standard` | status=`ok`

@@ -1,0 +1,17 @@
+{
+  "doc_id": "word-7fd190cf2fb7",
+  "source_path": "references/knowledge_base/Quality Standards/auto_ingested/童裝梭織品質標準(中文版）.doc",
+  "file_type": "word",
+  "business_category": "quality_standard",
+  "matched_keywords": [
+    "quality standards"
+  ],
+  "sha256": "0acd3fbe55257c509b5790def35fdf54eeddd99d02a21acb4272aa7159943daf",
+  "extractor": "textutil-doc",
+  "status": "ok",
+  "requires_ocr": false,
+  "extracted_from": null,
+  "notes": null,
+  "chunk_count": 1,
+  "updated_at": "2026-05-08T02:16:15+00:00"
+}
