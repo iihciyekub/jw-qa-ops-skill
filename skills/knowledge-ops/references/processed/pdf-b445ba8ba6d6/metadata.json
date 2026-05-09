@@ -7,11 +7,11 @@
     "product inspection and inventory check guidelines"
   ],
   "sha256": "f3faeb11aa3435ad0a2833aea25cbbc447892b2c9e686f14a04271f76bc79e56",
-  "extractor": "pdfplumber",
+  "extractor": "pypdf",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 9,
-  "updated_at": "2026-03-12T03:19:54+00:00"
+  "updated_at": "2026-05-09T03:04:03+00:00"
 }

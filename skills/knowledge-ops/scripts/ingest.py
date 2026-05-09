@@ -232,10 +232,10 @@ SANITIZE_REPLACEMENTS = [
     (re.compile(r"JEANSWEST", re.IGNORECASE), "匿名品牌"),
     (re.compile(r"真維斯"), "匿名品牌"),
     (re.compile(r"真维斯"), "匿名品牌"),
-    (re.compile(r"\bTarget\b", re.IGNORECASE), "匿名品牌"),
+    (re.compile(r"Target", re.IGNORECASE), "匿名品牌"),
     (re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"), "匿名署名"),
     (re.compile(r"https?://[^\s)）]+"), "匿名系统"),
-    (re.compile(r"\beTDS\b", re.IGNORECASE), "匿名系统"),
+    (re.compile(r"eTDS", re.IGNORECASE), "匿名系统"),
     (re.compile(r"工貿系統"), "匿名系统"),
     (re.compile(r"工贸系统"), "匿名系统"),
     (re.compile(r"貿易管理\s*系統"), "匿名系统"),
@@ -274,9 +274,13 @@ def sanitize_text(text: str) -> str:
     sanitized = text or ""
     for pattern, replacement in SANITIZE_REPLACEMENTS:
         sanitized = pattern.sub(replacement, sanitized)
-    sanitized = re.sub(r"(?<![\w\u4e00-\u9fff])公司(?!\w)", "匿名组织", sanitized)
-    sanitized = re.sub(r"(?<![\w\u4e00-\u9fff])部門(?!\w)", "相关部门", sanitized)
-    sanitized = re.sub(r"(?<![\w\u4e00-\u9fff])部门(?!\w)", "相关部门", sanitized)
+    sanitized = re.sub(r"公\s*司", "匿名组织", sanitized)
+    sanitized = re.sub(r"(?<!相关)部\s*門", "相关部门", sanitized)
+    sanitized = re.sub(r"(?<!相关)部\s*门", "相关部门", sanitized)
+    sanitized = re.sub(r"(匿名组织){2,}", "匿名组织", sanitized)
+    sanitized = re.sub(r"(匿名品牌){2,}", "匿名品牌", sanitized)
+    sanitized = re.sub(r"(匿名系统){2,}", "匿名系统", sanitized)
+    sanitized = re.sub(r"(相关部门){2,}", "相关部门", sanitized)
     return sanitized
 
 
@@ -952,10 +956,11 @@ def write_processed_outputs(
     assets_root = processed_root / "assets"
     ensure_directory(tables_root)
     ensure_directory(assets_root)
+    display_source_rel_path = sanitize_text(source_rel_path)
 
     chunks = build_chunks(
         doc_id=doc_id,
-        source_rel_path=source_rel_path,
+        source_rel_path=display_source_rel_path,
         tech_type=tech_type,
         business_category=category_info["business_category"],
         sections=extraction.sections,
@@ -969,7 +974,7 @@ def write_processed_outputs(
 
     metadata = {
         "doc_id": doc_id,
-        "source_path": source_rel_path,
+        "source_path": display_source_rel_path,
         "file_type": tech_type,
         "business_category": category_info["business_category"],
         "matched_keywords": category_info["matched_keywords"],

@@ -1,17 +1,17 @@
 {
   "doc_id": "pdf-6d7593d21a61",
-  "source_path": "references/knowledge_base/Work guidelines/质量管理部门工作指引.pdf",
+  "source_path": "references/knowledge_base/Work guidelines/相关部门工作指引.pdf",
   "file_type": "pdf",
   "business_category": "work_guideline",
   "matched_keywords": [
     "work guidelines"
   ],
   "sha256": "c5167c39ea8a6818cbfc6b757ad785fac25c9356480119cc8ef99278398cd251",
-  "extractor": "pdfplumber",
+  "extractor": "pypdf",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 15,
-  "updated_at": "2026-03-12T03:19:58+00:00"
+  "updated_at": "2026-05-09T03:04:04+00:00"
 }

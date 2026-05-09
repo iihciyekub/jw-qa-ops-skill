@@ -10,8 +10,8 @@
   "extractor": "paired-pdf-for-ppt",
   "status": "ok",
   "requires_ocr": false,
-  "extracted_from": "/Users/yjli/Desktop/ref_260311_jeanswest_skills/skills/knowledge-ops/references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
+  "extracted_from": "/Users/iipro/iiworkspace/jw-qa-ops-skill/skills/knowledge-ops/references/knowledge_base/Semi-finished Product Inspection Process/BP-PACIQADT-001 4.7 半成品查貨流程  260227.pdf",
   "notes": null,
   "chunk_count": 7,
-  "updated_at": "2026-03-12T03:19:58+00:00"
+  "updated_at": "2026-05-09T03:04:04+00:00"
 }

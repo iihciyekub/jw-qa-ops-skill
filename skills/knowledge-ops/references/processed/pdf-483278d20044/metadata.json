@@ -7,11 +7,11 @@
     "semi-finished product inspection process"
   ],
   "sha256": "d56fb66071849c36795adf59e628f0973ecd3635182331185912afde6ad53194",
-  "extractor": "pdfplumber",
+  "extractor": "pypdf",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 7,
-  "updated_at": "2026-03-12T03:19:57+00:00"
+  "updated_at": "2026-05-09T03:04:04+00:00"
 }

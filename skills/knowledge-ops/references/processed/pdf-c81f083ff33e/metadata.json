@@ -7,11 +7,11 @@
     "quality standards"
   ],
   "sha256": "25cf6d4de0d67a605e85f487ce8435f8f9996bd4dde2cce1f7df2d124a32f3bf",
-  "extractor": "pdfplumber",
+  "extractor": "pypdf",
   "status": "ok",
   "requires_ocr": false,
   "extracted_from": null,
   "notes": null,
   "chunk_count": 44,
-  "updated_at": "2026-03-12T03:19:57+00:00"
+  "updated_at": "2026-05-09T03:04:04+00:00"
 }
